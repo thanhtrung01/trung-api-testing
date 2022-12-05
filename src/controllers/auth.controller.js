@@ -34,7 +34,7 @@ CTRL.login = (req, res) => {
             }
 
             let token = jwt.sign({ data: admin }, config.ACCESS_TOKEN_SECRET, {
-                expiresIn: '2h',
+                expiresIn: '20m',
             });
 
             return res.status(201).json({
