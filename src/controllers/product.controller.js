@@ -68,6 +68,7 @@ CTRL.createProduct = (req, res, next) => {
         newProduct: req.body.newProduct,
         desc: req.body.desc,
         sale: req.body.sale,
+        slug: req.body.slug,
     });
     if (req.file) {
         newProducts.img = req.file.path;
